@@ -30,3 +30,19 @@ ul li {
     background-position: 0 0;
  
 }
+
+#popup {
+    transform: translateY(-50%) scale(0.01);
+    visibility: hidden;
+    transition: 0.4s;
+}
+
+.open-popup {
+    visibility: visible !important;
+    transform: translateY(20%) scale(1) !important;
+}
+
+.close-popup {
+    visibility: hidden;
+    transform: translateY(-50%) scale(0.01);
+}
