@@ -22,6 +22,7 @@ const btnEl = document.querySelector("#btn-el")
 btnEl.addEventListener("click", fullGenerate)
 
 function fullGenerate() {
+    clear()
     generateSetup()
     generateA()
     generateB()
@@ -33,7 +34,6 @@ function fullGenerate() {
 }
 // generate students array
 function generateSetup() {
-
     // create a student desk array
 for (let i=16; i>=1; i--) {
     deskA.push(document.querySelector("#seat-a"+ i +""))
@@ -56,7 +56,6 @@ for (let i=13; i>=1; i--) {
 
     let students = studentText.value // var -> DOUBLE BIND
     var studentName = students.split("\n")
-    clear()
     for(let i=1; i<=studentName.length; i++) {
         if (studentName !== undefined) {
             number.push(i)
@@ -249,38 +248,38 @@ function generateF() {
 
 
 // clear and reset the desk before generate students
-function clear () {
-let deskA = [];
-let deskB = [];
-let deskC = [];
-let deskD = [];
-let deskE = [];
-let deskF = [];
-let studentA = [];
-let studentB = [];
-let studentC = [];
-let studentD = [];
-let studentE = [];
-let studentF = [];
-let number = [];
-    deskA.forEach(element => {
-        element.textContent = " "
+function clear() {
+deskA.forEach(element => {
+    element.textContent = " "
 })
-    deskB.forEach(element => {
-        element.textContent = " "
+deskB.forEach(element => {
+    element.textContent = " "
 })
-    deskC.forEach(element => {
-        element.textContent = " "
+deskC.forEach(element => {
+    element.textContent = " "
 })
-    deskD.forEach(element => {
-        element.textContent = " "
+deskD.forEach(element => {
+    element.textContent = " "
 })
-    deskE.forEach(element => {
-        element.textContent = " "
+deskE.forEach(element => {
+    element.textContent = " "
 })
-    deskF.forEach(element => {
-        element.textContent = " "
+deskF.forEach(element => {
+    element.textContent = " "
 })
+deskA = [];
+deskB = [];
+deskC = [];
+deskD = [];
+deskE = [];
+deskF = [];
+studentA = [];
+studentB = [];
+studentC = [];
+studentD = [];
+studentE = [];
+studentF = [];
+number = [];
 }
 
 function saveList () {
