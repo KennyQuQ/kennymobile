@@ -41,10 +41,10 @@ for (let i=16; i>=1; i--) {
 for (let i=15; i>=1; i--) {
     deskB.push(document.querySelector("#seat-b"+ i +""))
 }
-for (let i=15; i>=1; i--) {
+for (let i=14; i>=1; i--) {
     deskC.push(document.querySelector("#seat-c"+ i +""))
 }
-for (let i=12; i>=1; i--) {
+for (let i=13; i>=1; i--) {
     deskD.push(document.querySelector("#seat-d"+ i +""))
 }
 for (let i=14; i>=1; i--) {
@@ -65,37 +65,37 @@ for (let i=13; i>=1; i--) {
 
     // arrange students
     // Class A
-    for(let i=1; i<=30; i++) {
+    for(let i=1; i<=32; i++) {
         let r = Math.floor(Math.random() * number.length) //random
         studentA.push(studentName[number[r] - 1])
         const removed = number.splice(r, 1) // remove specific index in the arrays
     }
 
-    for(let i=1; i<=29; i++) {
+    for(let i=1; i<=30; i++) {
         let r = Math.floor(Math.random() * number.length) //random
         studentB.push(studentName[number[r] - 1])
         const removed = number.splice(r, 1) // remove specific index in the arrays
     }
 
-    for(let i=1; i<=29; i++) {
+    for(let i=1; i<=28; i++) {
         let r = Math.floor(Math.random() * number.length) //random
         studentC.push(studentName[number[r] - 1])
         const removed = number.splice(r, 1) // remove specific index in the arrays
     }
 
-    for(let i=1; i<=25; i++) {
+    for(let i=1; i<=26; i++) {
         let r = Math.floor(Math.random() * number.length) //random
         studentD.push(studentName[number[r] - 1])
         const removed = number.splice(r, 1) // remove specific index in the arrays
     }
 
-    for(let i=1; i<=26; i++) {
+    for(let i=1; i<=28; i++) {
         let r = Math.floor(Math.random() * number.length) //random
         studentE.push(studentName[number[r] - 1])
         const removed = number.splice(r, 1) // remove specific index in the arrays
     }
 
-    for(let i=1; i<=26; i++) {
+    for(let i=1; i<=25; i++) {
         let r = Math.floor(Math.random() * number.length) //random
         studentF.push(studentName[number[r] - 1])
         const removed = number.splice(r, 1) // remove specific index in the arrays
@@ -189,12 +189,12 @@ function generateD() {
                 });
         }
         // pick the remain student to the special desks that contain 3 student
-                   let r = Math.floor(Math.random() * studentD.length) //random
+              /*      let r = Math.floor(Math.random() * studentD.length) //random
                 if(studentD[r] !== undefined) {
                     deskD[4].textContent += ` ${studentD[r]}` // (${number[r]})
                     deskD[4].textContent += "\n"
                     const removed = number.splice(r, 1) // remove specific index in the array
-                }
+                } */
         } 
 
 function generateE() {
